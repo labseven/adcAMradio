@@ -15,8 +15,11 @@ C = 35pF
 Using a variable capacitor (12-60pF)
 
 ## RF amp (Opamp):
-Using an LT1222:
+Using an LT1222CN8:
 GBWP: 500 MHz
 Input freq 850 kHz
 Max gain: 588.2 (Reccomended gain is 100 - 1000, so we will probably be okay)
 
+Gain 500:
+A = 1+Rf/Rg
+500 = 1 + Rf/Rq
