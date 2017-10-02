@@ -23,7 +23,7 @@ C = 470 pF
 `1/(2Pi*RC) ~= 720KHz`
 
 ## RF amp (Opamp):
-Using an LT1222CN8:
+Using a [LT1222CN8](http://cds.linear.com/docs/en/datasheet/1222fc.pdf):
 GBWP: 500 MHz
 Input freq 850 kHz
 Max gain: 588.2 (Recommended gain is 100 - 1000, so we will probably be okay)``
@@ -40,3 +40,10 @@ Note: Op amp is bi-polar, Power must be v+ (6v) and v- (-6v) relative to GND
 Gain 500:
 A = 1+Rf/Rg
 500 = 1 + Rf/Rq
+
+## Analog Multiplier
+Using an [AD633AN](http://www.analog.com/media/en/technical-documentation/data-sheets/AD633.pdf):
+
+Using both noninverting inputs, inverting inputs and summing input to ground.
+Attenuates by a factor of 10.
+
