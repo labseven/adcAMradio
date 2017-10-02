@@ -10,12 +10,14 @@ AM freq: `850 kHz`
 ## RC Bandpass filter:
 ### Low Pass:
 R = 475 Ohm
+
 C = 330 pF
 
 `1/(2Pi*RC) ~= 1MHz`
 
 ### High Pass:
 R = 475 Ohm
+
 C = 470 pF
 
 `1/(2Pi*RC) ~= 720KHz`
