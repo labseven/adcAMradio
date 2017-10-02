@@ -7,14 +7,18 @@ Making an AM radio for ADC Fall 2017
 
 AM freq: `850 kHz`
 
-## RLC Bandpass filter:
-Using a 1mH Inductor:
-`1/(2Pi*Sqrt(1/mH * C)) = 850kHz
-C = 35pF`
+## RC Bandpass filter:
+### Low Pass:
+R = 475 Ohm
+C = 330 pF
 
-Using a variable capacitor (12-60pF)
+`1/(2Pi*RC) ~= 1MHz`
 
-Note: Calibrate Cap after the amp, the probes have a ~20 pF capacitance, so it affects your reading
+### High Pass:
+R = 475 Ohm
+C = 470 pF
+
+`1/(2Pi*RC) ~= 720KHz`
 
 ## RF amp (Opamp):
 Using an LT1222CN8:
